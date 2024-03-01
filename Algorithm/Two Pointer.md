@@ -57,13 +57,13 @@ function twoPointerSum(arr, target) {
     let j = arr.length - 1; // 끝 포인터
 
     while (i < j) {
-        let sum = arr[i] + arr[j];
+        let exam = arr[i] + arr[j];
 
         // 목표값에 도달한 경우, 인덱스 쌍을 반환
-        if (sum === target) return [i, j];
+        if (exam === target) return [i, j];
 
         // 합이 목표값보다 작은 경우, 시작 포인터를 오른쪽으로 이동
-        else if (sum < target) i++;
+        else if (exam < target) i++;
 
         // 합이 목표값보다 큰 경우, 끝 포인터를 왼쪽으로 이동
         else j--;
@@ -82,16 +82,16 @@ twoPointerSum(arr, target); // [3, 4]
 
 #### twoPointerSum - Loop1
 - i = 0, j = 4
-- sum = arr[i] + arr[j] = arr[0] + arr[4] = 1 + 5 = 6
+- exam = arr[i] + arr[j] = arr[0] + arr[4] = 1 + 5 = 6
 
 | i |   |   |   | j |
 |---|---|---|---|---|
 | 1 | 2 | 3 | 4 | 5 |
 
 **계산**
-- i = 0, j = 4, sum = 6 
-- if (sum === target) - false 
-- else if (sum < target) - true, 따라서 i++
+- i = 0, j = 4, exam = 6 
+- if (exam === target) - false 
+- else if (exam < target) - true, 따라서 i++
 - i가 1로 증가
 
 |   | i |   |   | j |
@@ -100,12 +100,12 @@ twoPointerSum(arr, target); // [3, 4]
 
 #### twoPointerSum - Loop2
 - i = 1, j = 4
-- sum = arr[1] + arr[4] = 2 + 5 = 7
+- exam = arr[1] + arr[4] = 2 + 5 = 7
 
 **계산**
-- i = 1, j = 4, sum = 7 
-- if (sum === target) - false 
-- else if (sum < target) - true, 따라서 i++
+- i = 1, j = 4, exam = 7 
+- if (exam === target) - false 
+- else if (exam < target) - true, 따라서 i++
 - i가 2로 증가
 
 |   |   | i |   | j |
@@ -114,12 +114,12 @@ twoPointerSum(arr, target); // [3, 4]
 
 #### twoPointerSum - Loop3
 - i = 2, j = 4 
-- sum = arr[2] + arr[4] = 3 + 5 = 8
+- exam = arr[2] + arr[4] = 3 + 5 = 8
 
 **계산**
-- i = 2, j = 4, sum = 8 
-- if (sum === target) - false 
-- else if (sum < target) - true, 따라서 i++
+- i = 2, j = 4, exam = 8 
+- if (exam === target) - false 
+- else if (exam < target) - true, 따라서 i++
 - i가 3으로 증가
 
 |   |   |   | i | j |
@@ -128,12 +128,12 @@ twoPointerSum(arr, target); // [3, 4]
 
 #### twoPointerSum - Last Loop
 - i = 3, j = 4 
-- sum = arr[3] + arr[4]
+- exam = arr[3] + arr[4]
   - = 4 + 5 = 9
 
 **계산**
-- i = 3, j = 4, sum = 9 
-- if (sum === target) - true 
+- i = 3, j = 4, exam = 9 
+- if (exam === target) - true 
 - 타겟을 찾았으므로[i, j] = [3, 4]를 반환
 
 <br>
