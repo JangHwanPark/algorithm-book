@@ -1,5 +1,6 @@
 # Summary
 
+- [알고리즘 학습 기록 노트](README.md)
 - [Ch.1 자료구조](DataStructure/README.md)
   - [배열 (Array)](./DataStructure/01.Array.md)
   - [스택 (Stack)](./DataStructure/02.Stack.md)
