@@ -1,7 +1,9 @@
 # Summary
 
-- [Chapter 1](DataStructure/README.md)
-- [Chapter 2](AlgorithmicPatterns/README.md)
+- [Ch.1 자료구조](DataStructure/README.md)
+  - [배열 (Array)](./DataStructure/01.Array.md)
+  - [스택 (Stack)](./DataStructure/02.Stack.md)
+- [Ch.2 알고리즘 패턴](AlgorithmicPatterns/README.md)
   - [재귀 함수 (Recursive Function)](./AlgorithmicPatterns/01.Recursion.md)
   - [순열 (Permutations)](./AlgorithmicPatterns/02.Permutations.md)
   - [조합 (Combinations)](./AlgorithmicPatterns/03.Combinations.md)
@@ -14,4 +16,4 @@
   - [분할 정복 (Divide and Conquer)](./AlgorithmicPatterns/10.DivideAndConquer.md)
   - [백트래킹 (Backtracking)](./AlgorithmicPatterns/11.Backtracking.md)
   - [비트 마스킹 (Bit Masking)](./AlgorithmicPatterns/12.BitMasking.md)
-- [Chapter 3](Algorithm/README.md)
+- [Ch.3 알고리즘](Algorithm/README.md)
